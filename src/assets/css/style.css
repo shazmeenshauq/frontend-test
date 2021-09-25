@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: gilRoyExtraBold;
+    src: url(fonts/gilroy/Gilroy-ExtraBold.otf);
+  }
+  @font-face {
+    font-family: gilRoyLight;
+    src: url(fonts/gilroy/Gilroy-Light.otf);
+  }
+
+
+:root {
+
+    /* Colors */
+  --white: #ffffff;
+  --dark-blue: #08083D;
+  --light-green:#23CE6B;
+  
+  
+  --light-blue:#316EFF;
+  --light-puruple:#6184D8;
+  --orange:#E86F3A;
+
+  --roboto : 'Roboto', sans-serif;
+
+
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+    overflow-x: hidden;
+}
+
+/* Global Styles */
+a{
+    text-decoration: none;
+
+}
+.py-40{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.bg-light-blue{
+    background: var(--light-blue);
+    color: var(--white);
+}
+.bg-blue{
+    background:var(--dark-blue);
+    color: var(--white);
+}
+.bg-light-purple{
+    background:var(--light-puruple);
+    color: var(--white);
+}
+.bg-orange {
+    background: var(--orange);
+    color: var(--white);
+}
+.bg-green{
+    background:var(--light-green) !important;
+    color:var(--white) !important;
+}
+.text-green{
+    color: var(--light-green) !important;
+}
+.text-blue{
+    color: var(--dark-blue) !important;
+}
+
+.section-heading {
+    font-size: 50px;
+    font-family: gilRoyExtraBold;
+    color: var(--white);
+}
+.section-padding
+{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+/* Navbar */
+
+.navbar{
+    background-color: var(--dark-blue) !important;
+    border-bottom: 2px solid var(--white);
+}
+
+.navbar-brand{
+    font-family: gilRoyExtraBold;
+    color: var(--white) !important;
+    font-size: 31px ;
+    
+}
+.nav-link{
+    font-family: gilRoyLight;
+    color: var(--white) !important;
+    font-size: 16px;
+}
+.nav-item .btn {
+    font-family: gilRoyExtraBold;
+    color: var(--white);
+    padding: 5px;
+    background-color: var(--light-green);
+    border-radius: 5px;
+    width: 138px;
+    height:40px;
+    align-items: center;
+}
+
+/* Banner */
+
+.banner{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.banner .sideImg {
+    width: 600px;
+height: 500px;
+}
+.banner h1{
+    font-size: 50px;
+    font-family: gilRoyExtraBold;
+    text-align: left;
+    color: var(--white);
+}
+.banner p {
+    font-family: var(--roboto);
+    font-size: 24px;
+text-align: left;
+color: var(--white);
+}
+.banner .btn {
+    background: var(--light-green);
+    box-shadow: var(--light-green) 0px 8px 8px;
+    border-radius: 100px;
+    color: var(--white);
+    font-family: var(--roboto);
+padding: 20px;
+font-size: 24px;
+transition: all ease-out 0.3s;
+margin-top: 30px;
+}
+.banner .btn:hover{
+    margin-top:-10px;
+}
+
+
+/* List */
+
+.list {
+    background-image: url('../img/Group\ 2119.png');
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: justify;
+
+}
+.list h1{
+    font-family: gilRoyExtraBold;
+    font-size: 50px;
+}
+.list p {
+    margin-left: 20px;
+}
+.list img{
+    width: 25px;
+    height: 20px;
+}
+.check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .list section {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: justify;
+  }
+  
+  .check-list li:before {
+      content:'';
+      background-image:  url('../img/check.svg') ;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 25px;
+      height: 20px;
+
+  }
+
+/* mallsSection */
+.mallsSection{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+.mallsSection h1{
+    font-family: gilRoyExtraBold;
+    font-size: 50px;
+    color: var(--white);
+    }
+    .mallsSection p{
+        font-family: var(--roboto);
+        font-size: 24px;
+        color: var(--white);
+
+        }
+
+        .mallsSection .img-desc{
+            font-size: 20px;
+            font-family: var(--roboto);
+            font-weight: 500px;
+            margin-top: 10px;
+        }
+
+
+/* Team */
+.team {
+    background:#6184D8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.team p {
+    font-size: 21px ;
+    text-align: left;
+}
+.team .img-container{
+    position: relative;
+}
+
+.team .sideImg1{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -40px;
+    right: -178px;
+}
+
+
+/* Cards Grid */
+
+.cards-grid{
+    background: var(--white);
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.cards-grid img{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    margin: auto;
+}
+.cards-grid .card{
+    border: none ;
+    text-align: center;
+}
+
+.cards-grid .card-title{
+    color: var(--dark-blue);
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+}
+.cards-grid .card-text{
+    font-family: var(--roboto);
+    font-weight: 400px;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Extra Section */
+.extra-section{
+    background: var(--white);
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.extra-section img{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    margin: auto;
+}
+.extra-section .card{
+    border: none ;
+    text-align: center;
+}
+
+.extra-section .card-title{
+    color: var(--dark-blue);
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+}
+.extra-section .card-text{
+    font-family: var(--roboto);
+    font-weight: 400px;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Steps Card */
+.stepsCard{
+    background: rgb(97,132,216);
+    background: linear-gradient(139deg, rgba(97,132,216,1) 65%, rgba(8,8,61,1) 100%);
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.stepsCard h1{
+    font-family: gilRoyExtraBold;
+    font-size: 45px;
+    text-align: left;
+    color: white;
+}
+.stepsCard h4{
+    font-family: gilRoyExtraBold;
+    font-size: 27px;
+    text-align: left;
+}
+.stepsCard p{
+    font-family: var(--roboto);
+    font-size: 21px;
+    text-align: left;
+    color: var(--white);
+}
+
+.btn.btn-icon {
+    background: rgb(77,128,251);
+    background: linear-gradient(328deg, rgba(77,128,251,1) 35%, rgba(35,206,107,1) 77%);
+    height: 6rem;
+    min-width: 6rem;
+    width: 6rem;
+    padding: 0;
+    /* font-size: .9375rem; */
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+    border: none !important;
+    box-shadow: none !important;
+}
+.btn-round {
+    border-width: 1px;
+    border-radius: 50px;
+    padding-right: 23px;
+    padding-left: 23px;
+}
+
+/* Banner 2 */
+.banner2{
+    background-image: url('../img/Group\ 2110.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner2 p{
+    font-size: 21px;
+    font-family: var(--roboto);
+}
+
+/* Success Stories */
+
+.card-header i{
+    font-size:5rem;
+}
+.success-stories{
+    background-image: url('../img/Image 89.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.success-stories .sub-heading{
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 24px;
+
+}
+/* gurantee */
+
+.gurantee{
+    background: rgb(97,132,216);
+    background: linear-gradient(139deg, rgba(97,132,216,1) 65%, rgba(8,8,61,1) 100%);
+
+}
+.gurantee p {
+    font-family: var(--roboto);
+    font-size: 21px;
+    text-align: center;
+    color: var(--white);
+}
+.gurantee h6{
+    font-family: var(--roboto);
+    font-weight: 500;
+    color: var(--white);
+}
+.gurantee .btn {
+    background: var(--light-green);
+    box-shadow: var(--light-green) 0px 8px 8px;
+    border-radius: 100px;
+    color: var(--white);
+    font-family: var(--roboto);
+padding: 20px;
+font-size: 24px;
+transition: all ease-out 0.3s;
+margin-top: 30px;
+}
+
+/* call-section */
+.call-section{
+    background: white;
+}
+
+/* Footer */
+.footer {
+    background-image: url('../img/Group 2176.svg');
+}
+.footer h6{
+    font-family: gilRoyExtraBold;
+    text-align: right;
+}
+.footer img{
+    margin-left: 8px;
+}
+.footer p {
+    font-family: gilRoyLight;
+
+}
+.footer a{
+    font-size: 16px;
+    font-family: gilRoyLight;
+    color: white;
+    margin-left: 15px;
+}
+
+/* Media Queries */
+
+.carousel{
+    display: none;
+}
+
+@media(max-width:768px){
+    
+   .navbar-dark .navbar-toggler{
+        border:none !important
+    }
+
+
+    .navbar>.container {
+      justify-content: space-around;
+   }
+
+   /* Banner */
+
+   .banner {
+       margin-top: 40px;
+       text-align: center;
+   }
+   .banner h1{
+       font-size: 32px;
+       text-align: center;
+   }
+   .banner .sub-heading{
+       font-size: 34px;
+       text-align: center;
+   }
+   .banner p {font-size: 18px;text-align: center;}
+ .banner-text{
+     text-align: center;
+ }
+
+   .banner-text{
+       display: block !important;
+   }
+   .banner .sideImg{
+       display: none;
+   }
+   .banner .sideImg1{
+    display: block !important;
+    width: 327px;
+    height:225px;
+}
+.banner-img{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.extra-section{
+    display: block !important;
+}
+
+.list {
+    background-image: url('../img/Mask\ Group\ 877.png');
+    color: white;
+ 
+
+}
+
+.team .img-container{
+    display: none;
+}
+
+.stepsCard .icon-container img{
+    margin: auto;
+ 
+}
+.success-stories{
+    background:grey;
+}
+
+.success-stories img{
+    height:100px;
+    width: 100px;
+    margin: auto;
+}
+.call-section img {
+    display:none;
+}
+.footer .upper-list{
+    display: none;
+}
+.footer .lower-list{
+    display: block !important;
+    text-align: center;
+}
+.footer .lower-list a{
+    display: block !important;
+    text-align: center;
+}
+.carousel{
+    display: block;
+}
+.images{
+    display: none;
+}
+
+}
+
